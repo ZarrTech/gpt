@@ -1,0 +1,120 @@
+.gpt3__possibility{
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__possibility-image{
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+
+.gpt3__possibility-image img{
+    width: 80%;
+    /* height: 100%; */
+}
+
+.gpt3__possibility-content{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.gpt3__possibility-content h4{
+    color: #71E5FF;
+font-size: 16px;
+font-family: Manrope;
+font-weight: 500;
+line-height: 30px;
+}
+
+.gpt3__possibility-content p{
+    color: #81AFDD;
+    font-size: 16px;
+    font-family: var(--font-family);
+    line-height: 30px;
+}
+
+.gpt3__possibility-content h4:nth-child(4){
+    color: #FF8A71;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+
+@media screen  and (max-width: 700px){
+
+    .gpt3__possibility-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .gpt3__possibility-content{
+        flex: 3;
+        margin-bottom: 0;
+    }
+
+    .gpt3__possibility-content p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .gpt3__possibility-content h1{
+        font-size: 23px;
+    }
+
+    .gpt3__possibility-content h4{
+        font-size: 13px;
+    }
+
+    .gpt3__possibility-content h4:nth-child(4){
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen  and (max-width: 950px){
+
+    .gpt3__possibility{
+        flex-direction: column;
+    }
+
+    .gpt3__possibility-image img{
+        margin: 1rem 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gpt3__possibility-content{
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+
+    /* .gpt3__possibility-content p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .gpt3__possibility-content h1{
+        font-size: 24px;
+    }
+
+    .gpt3__possibility-content h4{
+        font-size: 14px;
+    }
+
+    .gpt3__possibility-content h4:nth-child(4){
+        font-size: 14px;
+    } */
+
+
+}
